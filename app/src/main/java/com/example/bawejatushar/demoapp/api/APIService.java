@@ -18,7 +18,7 @@ import retrofit.http.POST;
  */
 public interface APIService {
     @GET("get_data_in_json_format.php")
-    public void getData(Callback<List<Diseases>> response);
+   Call<Map> getData();
 
     @POST("registeruser.php")
     Call<Map> userRegister(@Body UserInfoDTO userInfoDTO);

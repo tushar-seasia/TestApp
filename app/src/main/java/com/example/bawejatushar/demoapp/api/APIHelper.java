@@ -53,18 +53,6 @@ public class APIHelper {
     }
 
     public void userRegister(UserInfoDTO userInfoDTO, final APICallback<Map> callback){
-        /*apiService.getData().enqueue(new Callback<List<Diseases>>() {
-            @Override
-            public void onResponse(Call<List<Diseases>> call, Response<List<Diseases>> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<List<Diseases>> call, Throwable throwable) {
-
-            }
-        });*/
-
         apiService.userRegister(userInfoDTO).enqueue(new retrofit.Callback<Map>() {
             @Override
             public void onResponse(retrofit.Response<Map> response, Retrofit retrofit) {
@@ -78,21 +66,4 @@ public class APIHelper {
         });
     }
 
-    List<Diseases> list;
-
-    public List<Diseases> getData(final APICallback<Map> callback) {
-
-        apiService.getData(new Callback<List<Diseases>>() {
-            @Override
-            public void onResponse(Response<List<Diseases>> response, Retrofit retrofit) {
-                list =response.body();
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-
-            }
-        });
-        return list;
-    }
 }
