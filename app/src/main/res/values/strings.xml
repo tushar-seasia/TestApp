@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+
+    <!--
+	=================================================================================================================================
+	Connection Strings
+	=================================================================================================================================
+	-->
+    <string name="error_server_communication">Unable to get data from server</string>
+    <string name="error_internet_connection">No connectivity with Earth please check your internet connection</string>
+    <string name="error_something_went_wrong"><b>Oh-ho!</b>\n\nOpps! Something went wrong.</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+    <string name="error_name_empty">Full Name can not be empty</string>
+    <string name="error_mobile_empty">Mobile number can not be empty</string>
+    <string name="error_city_empty">City can not be empty</string>
+    <string name="error_address_empty">Address can not be empty</string>
+    <string name="error_state_empty">State can not be empty</string>
+    <string name="error_mobile_length">Phone number can\'t be less than 10 digits</string>
+</resources>
